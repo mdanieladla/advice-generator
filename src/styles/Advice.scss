@@ -1,5 +1,55 @@
-// $cardColor: hsl(217, 19%, 24%);
+$cardColor: hsl(217, 19%, 24%);
+$Light-Cyan: hsl(193, 38%, 86%);
+$Neon-Green: hsl(150, 100%, 66%);
 
-// .card{
-//     background-color: $cardColor;
-// }
+.card{
+    background-color: $cardColor;
+    width: 365px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    &-id{
+        color: $Neon-Green;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &-advice{
+        text-align: center;
+        color: $Light-Cyan;
+        font-size: 28px;
+        padding: 15px;
+    }
+
+    &-stuff{
+        display: flex;
+        justify-content: center;
+    }
+
+    &-test{
+        background-color: $Neon-Green;
+    }
+
+    &-btn{
+        background: $Neon-Green;
+        border: 20px solid $Neon-Green;
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-btn__dice{
+        width: 30px;
+        height: 30px;
+        background-color: $Neon-Green;
+        // position: relative;
+        // top: 85%;
+        // transform: translateY(-85%);
+    }        
+}
