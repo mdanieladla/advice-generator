@@ -3,7 +3,8 @@ import callToApi from '../services/api';
 import { useEffect, useState } from 'react';
 //styles
 import '../styles/Advice.scss';
-
+import dice from '../images/icon-dice.svg';
+import divider from '../images/pattern-divider-mobile.svg';
 const Advice = () => {
   const [advice, setAdvice] = useState({});
 
@@ -13,14 +14,22 @@ const Advice = () => {
     });
   }, []);
 
+  const handleChangeAdvice = () => {
+    callToApi().then((response) => {
+      setAdvice(response);
+    });
+  };
+
   return (
     <div className='card'>
-      <span>{advice.id}</span>
-      <p>{advice.advice}</p>
-      <div>linea</div>
-      <div>| |</div>
-      <div>linea</div>
-      <div>dado</div>
+      <p className='card-id'>Advice #{advice.id}</p>
+      <p className='card-advice'>"{advice.advice}"</p>
+      <div className='card-stuff'>
+        <img src={divider} alt='divider' />
+      </div>
+      <button onClick={handleChangeAdvice} className='card-btn'>
+        <img className='card-btn__dice' src={dice} alt='icon dice' />
+      </button>
     </div>
   );
 };
