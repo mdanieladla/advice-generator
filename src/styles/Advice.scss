@@ -5,13 +5,14 @@ $Neon-Green: hsl(150, 100%, 66%);
 .card{
     background-color: $cardColor;
     width: 365px;
-    height: 300px;
+    //height: 300px;
     padding: 20px;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+
     &-id{
         color: $Neon-Green;
         text-align: center;
