@@ -17,6 +17,7 @@ const Advice = () => {
   const handleChangeAdvice = () => {
     callToApi().then((response) => {
       setAdvice(response);
+      console.log('he clickado');
     });
   };
 
