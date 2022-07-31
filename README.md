@@ -26,6 +26,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./src/images/screenshot.png/ | width:100)
+<img src="./src/images/screenshot.png/" width=150>
 
 ### Links
 
