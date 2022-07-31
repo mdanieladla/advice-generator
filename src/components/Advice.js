@@ -3,9 +3,11 @@ import callToApi from '../services/api';
 import { useEffect, useState } from 'react';
 //styles
 import '../styles/Advice.scss';
+//images
 import dice from '../images/icon-dice.svg';
 import divider from '../images/pattern-divider-mobile.svg';
 import dividerDesktop from '../images/pattern-divider-desktop.svg';
+
 const Advice = () => {
   const [advice, setAdvice] = useState({});
 
@@ -18,7 +20,6 @@ const Advice = () => {
   const handleChangeAdvice = () => {
     callToApi().then((response) => {
       setAdvice(response);
-      console.log('he clickado');
     });
   };
 
