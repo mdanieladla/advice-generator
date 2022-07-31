@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import '../styles/Advice.scss';
 import dice from '../images/icon-dice.svg';
 import divider from '../images/pattern-divider-mobile.svg';
+import dividerDesktop from '../images/pattern-divider-desktop.svg';
 const Advice = () => {
   const [advice, setAdvice] = useState({});
 
@@ -25,9 +26,10 @@ const Advice = () => {
     <div className='card'>
       <p className='card-id'>Advice #{advice.id}</p>
       <p className='card-advice'>"{advice.advice}"</p>
-      <div className='card-stuff'>
+      <picture className='card-stuff'>
+        <source media='(min-width: 1024px)' srcSet={dividerDesktop} />
         <img src={divider} alt='divider' />
-      </div>
+      </picture>
       <button onClick={handleChangeAdvice} className='card-btn'>
         <img className='card-btn__dice' src={dice} alt='icon dice' />
       </button>
