@@ -4,7 +4,7 @@ $Neon-Green: hsl(150, 100%, 66%);
 
 .card{
     background-color: $cardColor;
-    width: 355px;
+    width: 300px;
     padding: 30px;
     border-radius: 25px;
     display: flex;
@@ -51,10 +51,10 @@ $Neon-Green: hsl(150, 100%, 66%);
         justify-content: center;
         align-items: center;
         transition: box-shadow 0.3s ease-in-out;
+        cursor: pointer;
     }
 
     &-btn__dice{
-        cursor: pointer;
         width: 30px;
         height: 30px;
         background-color: $Neon-Green;
