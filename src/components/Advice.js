@@ -14,6 +14,7 @@ const Advice = () => {
   useEffect(() => {
     callToApi().then((response) => {
       setAdvice(response);
+      console.log('click');
     });
   }, []);
 
