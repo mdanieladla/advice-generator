@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://mdanieladla.github.io/tip-calculator/)
+- Live Site URL: [Add live site URL here](https://mdanieladla.github.io/advice-generator/)
 
 ## My process
 
